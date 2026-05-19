@@ -1,0 +1,23 @@
+{
+  "name": "googify",
+  "description": "Type :goog: or :evilgoog: anywhere to drop a goog.",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "icons": "node scripts/icons.js",
+    "screenshots": "node scripts/screenshots.js",
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt zip",
+    "build:firefox": "wxt zip -b firefox",
+    "build:all": "wxt zip && wxt zip -b firefox && wxt zip -b edge",
+    "zip": "wxt zip",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.40.0",
+    "sharp": "^0.33.0",
+    "typescript": "^5.4.0",
+    "wxt": "^0.19.0"
+  }
+}

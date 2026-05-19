@@ -1,0 +1,7 @@
+.claude
+.output
+.wxt
+node_modules
+store-description.txt
+store-privacy.txt
+.env
